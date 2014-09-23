@@ -1,0 +1,63 @@
+@charset "utf-8";
+/* 
+    Document   : styles.css
+    Created on : 1-Feb-2014, 6:46:19 PM
+    Author     : Blake
+    Description:
+        Stylesheet for Address Book
+*/
+
+
+nav ul {
+
+    /* Turn off list markers */
+    list-style-type: none;
+    /* Disable space around lists */
+    /* Turn off outside padding */
+    padding: 0;
+    /* Turn off margins */
+    margin: 0;
+}
+
+nav li {
+
+    /* Arrange along top of screen */
+    float: left;
+}
+
+nav a {
+    background: white;
+    display: block;
+    padding: 0.5em;
+    border:0em;
+    text-align:center;
+}
+/* Link Interaction */
+nav a:link {
+    background: white;
+    color: black;
+}
+nav a:visited {
+    background: grey;
+    color: white;
+}
+nav a:focus {
+    background: lightblue;
+}
+nav a:hover {
+    background: blue;
+}
+nav a:active {
+    background: red;
+}
+nav li ul {
+    /* Hide secondary lists */
+    position: absolute;
+    left: -9999px;
+}
+/* Capture the child ul of the li that is being moused over */
+nav li:hover ul{
+    left: auto;
+}
+
+
